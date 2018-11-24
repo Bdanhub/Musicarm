@@ -6,11 +6,11 @@ console.log(`hello`)
 
 
 client.on('ready', () => {                           
-client.user.setGame(`🌈RAINBOW|g!help-R | grinvite`);                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`🌈RAINBOW|g!help-R | g!invite`);                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
    client.on('message', message => {
-	   if(message.content.startsWith(`${prefix}invite`)){
+	   if(message.content.startsWith(`${prefix}inv.ite`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
 		   var embed = new Discord.RichEmbed()
 		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
@@ -32,12 +32,12 @@ client.user.setGame(`🌈RAINBOW|g!help-R | grinvite`);
       .setColor("RANDOM")
       .setDescription(`
              
-=====================🌈 Help Rainbow. 🌈=====================
+🌈====================🌈 Help Rainbow. 🌈=====================🌈
 g!set = لبدا وانشاء رتبه الرينبو | Rainbow Start & Create Rainbow Role
 g!invite = لاضافه البوت | Bot Invite 
 **!ملاحظه: اذا ما شتغل البوت جرب تحط رتبه البوت اعلى من رتبه الرينبو ** 
 **NOTE: If the bot is working, try to drop the bot role higher than the Rainbow role !**
-=====================🌈 Help Raibow. 🌈=====================
+🌈=====================🌈 Help Raibow. 🌈=====================🌈
 `)
    message.author.sendEmbed(embed)
    
