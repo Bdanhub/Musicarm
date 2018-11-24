@@ -50,7 +50,7 @@ g!invite = لاضافه البوت | Bot Invite
   if(!rainbow){
          rainbow =  message.guild.createRole({
         name: "Rainbow",
-        color: "#000000",
+        color: "RANDOM",
         permissions:[]
       })
     }}})
