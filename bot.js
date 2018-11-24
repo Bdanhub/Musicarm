@@ -33,8 +33,8 @@ client.user.setGame(`🌈RAINBOW|g!help-R | grinvite`);
       .setDescription(`
              
 =====================🌈 Help Rainbow. 🌈=====================
-R!set = لبدا وانشاء رتبه الرينبو | Rainbow Start & Create Rainbow Role
-R!invite = لاضافه البوت | Bot Invite
+g!set = لبدا وانشاء رتبه الرينبو | Rainbow Start & Create Rainbow Role
+g!invite = لاضافه البوت | Bot Invite
 **!ملاحظه: اذا ما شتغل البوت جرب تحط رتبه البوت اعلى من رتبه الرينبو ** 
 **NOTE: If the bot is working, try to drop the bot role higher than the Rainbow role !**
 =====================🌈 Help Raibow. 🌈=====================
