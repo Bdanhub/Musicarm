@@ -1,5 +1,5 @@
 {
-    "ms" : 7000,
+    "ms" : 4000,
     "roleToDisco" : ["Rainbow"], 
     "prefix" : "g!"
 }
