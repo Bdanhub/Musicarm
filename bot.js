@@ -27,14 +27,14 @@ client.user.setGame(`🌈RAINBOW|g!help-R | grinvite`);
 
    client.on("message", message => {
  if (message.content === "g!help-R") {
-     message.channel.send('**:mailbox_with_mail: تم ارسال رسالة في الخاص** :mailbox_with_mail: ');
+     message.channel.send('**:heart_exclamation: تم ارسال رسالة في الخاص**  ');
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
       .setDescription(`
              
 =====================🌈 Help Rainbow. 🌈=====================
 g!set = لبدا وانشاء رتبه الرينبو | Rainbow Start & Create Rainbow Role
-g!invite = لاضافه البوت | Bot Invite
+g!invite = لاضافه البوت | Bot Invite 
 **!ملاحظه: اذا ما شتغل البوت جرب تحط رتبه البوت اعلى من رتبه الرينبو ** 
 **NOTE: If the bot is working, try to drop the bot role higher than the Rainbow role !**
 =====================🌈 Help Raibow. 🌈=====================
@@ -50,7 +50,7 @@ g!invite = لاضافه البوت | Bot Invite
   if(!rainbow){
          rainbow =  message.guild.createRole({
         name: "Rainbow",
-        color: "RANDOM",
+        color: "#000000",
         permissions:[]
       })
     }}})
