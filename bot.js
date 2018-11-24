@@ -32,12 +32,12 @@ client.user.setGame(`🌈RAINBOW|g!help-R | g!invite`);
       .setColor("RANDOM")
       .setDescription(`
              
-🌈====================🌈 Help Rainbow. 🌈=====================🌈
+====================🌈 Help Rainbow. 🌈=====================
 g!set = لبدا وانشاء رتبه الرينبو | Rainbow Start & Create Rainbow Role
 g!invite = لاضافه البوت | Bot Invite 
 **!ملاحظه: اذا ما شتغل البوت جرب تحط رتبه البوت اعلى من رتبه الرينبو ** 
 **NOTE: If the bot is working, try to drop the bot role higher than the Rainbow role !**
-🌈=====================🌈 Help Raibow. 🌈=====================🌈
+=====================🌈 Help Raibow. 🌈=====================
 `)
    message.author.sendEmbed(embed)
    
@@ -62,7 +62,7 @@ console.log('Welcome')
     const config = require('./config.json');
  const roles = config.roleToDisco;
   function discoRole() {
-    let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    let RANDOM = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     roles.forEach((role) => {
       let theRole = message.guild.roles.find("name", role);
       if(!theRole) return;
@@ -71,32 +71,14 @@ console.log('Welcome')
         client.on('ready', () => {                           
 
         return setInterval(() => { discoRole(); }, config.ms);
-        theRole.edit({color: random}).catch(e => {
+        theRole.edit({color: RANDOM}).catch(e => {
       })
     })
 }})
   }})
   
 
-    client.on("message", message => {
-console.log('Welcome')
-    const config = require('./config.json');
- const roles = config.roleToDisco;
-  function discoRole() {
-    let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    roles.forEach((role) => {
-      let theRole = message.guild.roles.find("name", role);
-      if(!theRole) return;
- {
-
-        client.on('ready', () => {                           
-
-        return setInterval(() => { discoRole(); }, config.ms);
-        theRole.edit({color: random}).catch(e => {
-      })
-    })
-}})
-  }})
+    
   
  
 
